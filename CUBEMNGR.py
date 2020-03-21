@@ -47,8 +47,7 @@ def exportResults():
         for x in times:
             t3 += 1
             file.write(f"Attempt {t3}: {x}\n")
-        if(FILEPATH):
-            shutil.copy(FILEPATH, path)
+        shutil.copy(FILEPATH, path)
 
 
 # Create the Application window and create a title label
